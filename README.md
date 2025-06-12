@@ -28,17 +28,24 @@ Customer churn is a key business problem in subscription-based industries. Reduc
 
 ### 3. Modeling
 
-- Logistic Regression → baseline model
-- Random Forest Classifier → more powerful model
+- **Logistic Regression** → baseline model  
+- **Random Forest Classifier** → more powerful model
 
 ### 4. Evaluation Metrics
 
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-- Feature Importance (Random Forest)
+**Logistic Regression:**
+
+- Accuracy: **65%**
+- Precision: **0.0**
+- Recall: **0.0**
+- F1 Score: **0.0**
+
+**Random Forest Classifier:**
+
+- Accuracy: **65%**
+- Precision: **1.0**
+- Recall: **1%**
+- F1 Score: **0.03**
 
 ### 5. Key Insights
 
@@ -50,22 +57,25 @@ Customer churn is a key business problem in subscription-based industries. Reduc
 
 - Models struggled with class imbalance → Recall for churn cases is low.
 - Future improvements:
-  - Apply **SMOTE** or class weighting.
-  - Tune classification threshold.
-  - Try advanced models (XGBoost, LightGBM).
+  - Apply **SMOTE** or class weighting to balance classes.
+  - Tune classification threshold to improve churn recall.
+  - Try advanced models such as **XGBoost** or **LightGBM**.
+  - Explore additional feature engineering opportunities.
 
 ### 7. Business Recommendations
 
 - Focus retention offers on customers with **high charges + short tenure**.
 - Analyze pricing bundles and loyalty incentives.
 - Develop onboarding programs targeting early churn reduction.
+- Explore targeted marketing campaigns for segments with higher churn risk.
 
 ## Conclusion
 
 This project demonstrates an end-to-end workflow for a classic business analytics problem:
 
-- Data understanding
-- Feature engineering
+- Data understanding and visualization
+- Feature engineering and cleaning
 - Modeling and evaluation
-- Business-focused interpretation
+- Business-focused interpretation of results
+- Recommendations for business action
 
